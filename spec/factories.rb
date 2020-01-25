@@ -48,7 +48,6 @@ FactoryBot.define do
 
   factory :nullEmail, class: UserModel do
     full_name { "Tony Stark" }
-    email { }
     password { "pwd123" }
   end
 end
