@@ -2,7 +2,7 @@ require "httparty"
 require "factory_bot"
 require_relative "Database"
 require_relative "factories"
-require_relative "services/user"
+require_relative "services/User"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
