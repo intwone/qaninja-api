@@ -36,7 +36,7 @@ describe "post" do
   end
 
   context "when duplicate email" do
-    let(:result) { ApiUser.save(build(:duplicateEmail).toHash) }
+    let(:result) { ApiUser.save(build(:registeredUser).toHash) }
 
     it { expect(result.response.code).to eql "409" }
     it { expect(result.parsed_response["msg"]).to eql "Oops. Looks like you already have an account with this email address." }
